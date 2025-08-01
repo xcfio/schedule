@@ -1,0 +1,21 @@
+{
+    "name": "nodejs",
+    "version": "0.0.1",
+    "main": "index.js",
+    "type": "module",
+    "author": "xcfio",
+    "license": "MIT",
+    "scripts": {
+        "fmt": "prettier --config=.prettierrc --write src",
+        "test": "tsc --noEmit",
+        "dev": "node --watch --experimental-strip-types --experimental-transform-types --env-file-if-exists=.env src/index.ts",
+        "start": "node --experimental-strip-types --experimental-transform-types --env-file-if-exists=.env src/index.ts"
+    },
+    "devDependencies": {
+        "@types/node": "^24.1.0"
+    },
+    "dependencies": {
+        "cheerio": "^1.1.2"
+    }
+}
+
